@@ -1,0 +1,40 @@
+apply plugin: 'java'
+
+apply plugin: 'eclipse'
+
+springVersion = "3.0.5.RELEASE"
+springSecurityVersion = "3.0.5.RELEASE"
+
+slf4jVersion = "1.6.1"
+
+group = 'com.noppanit.swagger.tutorial'
+version = '1.0'
+
+repositories {   
+    mavenCentral()
+}
+
+dependencies{
+    // Set-up Compile time dependencies
+    compile "org.slf4j:jcl-over-slf4j:$slf4jVersion",
+           
+        "org.slf4j:jul-to-slf4j:$slf4jVersion"
+    // Pull in all of the Spring dependencies 
+    compile "org.springframework:spring-tx:$springVersion",            
+        "org.springframework:spring-orm:$springVersion",
+        "org.springframework:spring-jdbc:$springVersion",
+        "org.springframework:spring-aspects:$springVersion",
+        "org.aspectj:aspectjrt:1.6.11"
+        
+    compile "org.springframework:spring-webmvc:$springVersion",
+         "org.springframework:spring-aop:$springVersion"
+ 
+    compile "org.springframework.security:spring-security-web:$springSecurityVersion",
+                "org.springframework.security:spring-security-config:$springSecurityVersion"
+ 
+    runtime "org.slf4j:slf4j-log4j12:$slf4jVersion"
+
+    // Pull in compile time dependencies.  
+    testCompile "junit:junit:4.8.2"
+    testCompile "org.springframework:spring-test:$springVersion"
+}
