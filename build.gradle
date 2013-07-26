@@ -16,9 +16,13 @@ repositories {
 
 dependencies{
     // Set-up Compile time dependencies
+
+    compile "org.hamcrest:hamcrest-all:1.3",
+            "org.hamcrest:hamcrest-library:1.3"
+
     compile "org.slf4j:jcl-over-slf4j:$slf4jVersion",
-           
-        "org.slf4j:jul-to-slf4j:$slf4jVersion"
+           "org.slf4j:jul-to-slf4j:$slf4jVersion"
+
     // Pull in all of the Spring dependencies 
     compile "org.springframework:spring-tx:$springVersion",            
         "org.springframework:spring-orm:$springVersion",
