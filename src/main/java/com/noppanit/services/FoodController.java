@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class FoodController {
 
     @RequestMapping(value = "/food", method = RequestMethod.GET, produces = "application/json")
-    @ApiOperation(value = "List food", notes = "No note", responseClass = "com.noppanit.model.Food")
+    @ApiOperation(value = "List food", notes = "No note", responseClass = "com.noppanit.model.Menu")
     public String listOfFoods() {
         return "home";
     }
