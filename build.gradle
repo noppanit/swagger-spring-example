@@ -3,7 +3,7 @@ apply plugin: 'war'
 apply plugin: 'eclipse'
 apply plugin: 'jetty'
 
-group = 'com.noppanit.swagger.tutorial'
+group = 'com.saelors.swagger.tutorial'
 version = '1.0'
 
 repositories {   
