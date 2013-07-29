@@ -1,4 +1,4 @@
-package com.saelors.services;
+package com.saelors.controllers;
 
 import com.wordnik.swagger.annotations.*;
 //import com.wordnik.swagger.annotations.Api;
@@ -7,10 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 //import org.springframework.web.bind.annotation.RequestMapping;
 //import org.springframework.web.bind.annotation.RequestMethod;
-import java.util.List;
-import java.util.ArrayList;
 import java.util.Date;
-import com.saelors.model.Menu;
 
 /**
  * Created with IntelliJ IDEA.
